@@ -15,6 +15,7 @@ body {
 
 button {
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 a {
@@ -32,8 +33,9 @@ a {
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1605px;
-  padding: 4px 15px 2px;
+  align-items: center;
+  /* max-width: 1605px; */
+  padding: 4px 15px;
 }
 
 .btn {
@@ -68,4 +70,33 @@ a {
 
 .space-a:hover {
   text-decoration: underline;
+}
+
+.nyt-logo {
+  display: block;
+  width: 195px;
+  height: 26px;
+  text-size-adjust: 100%;
+  margin-top: 6px;
+  margin-left: 105px;
+}
+
+.btn-nav {
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-family: "franklin", Helvetica, arial, sans-serif;
+  white-space: nowrap;
+  background: #567b95;
+  border: 1px solid #326891;
+  color: #fff;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0.05em;
+  transition: ease 0.6s;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.btn-nav:hover {
+  background: #326891;
 }
