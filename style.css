@@ -3,3 +3,69 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "franklin";
+  src: url("fonts/franklin-normal-700.ttf") format("truetype");
+}
+
+body {
+  font-family: "Times New Roman", Georgia, Times, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header-nav {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1605px;
+  padding: 4px 15px 2px;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  margin-right: 8px;
+  padding: 8px 9px 9px;
+}
+
+.svg {
+  display: inline-block;
+  height: 16px;
+  vertical-align: sub;
+  width: 16px;
+}
+
+.search-btn {
+  margin: 0;
+}
+
+.space-link {
+  text-transform: uppercase;
+  font-family: "franklin", Helvetica, Arial, sans-serif;
+  font-size: 14.25px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  left: 105px;
+  position: absolute;
+  top: 10px;
+}
+
+.space-a:hover {
+  text-decoration: underline;
+}
