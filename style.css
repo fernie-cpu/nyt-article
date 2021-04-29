@@ -9,8 +9,14 @@
   src: url("fonts/franklin-normal-700.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "cheltenham";
+  src: url("fonts/cheltenham-italic-700.ttf") format("truetype");
+}
+
 body {
   font-family: "Times New Roman", Georgia, Times, sans-serif;
+  color: #333;
 }
 
 button {
@@ -99,4 +105,23 @@ a {
 
 .btn-nav:hover {
   background: #326891;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.article-header {
+  margin-top: 3.75em;
+}
+
+.article-title {
+  color: #121212;
+  font-family: "cheltenham", Georgia, "Times New Roman", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  max-width: 600px;
+  margin: 0 20px 20px;
 }
