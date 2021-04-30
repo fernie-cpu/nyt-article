@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: "franklin-n";
+  src: url("fonts/franklin-normal-500.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "franklin";
   src: url("fonts/franklin-normal-700.ttf") format("truetype");
 }
@@ -12,6 +17,11 @@
 @font-face {
   font-family: "cheltenham";
   src: url("fonts/cheltenham-italic-700.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "imperial";
+  src: url("fonts/imperial-normal-500.ttf") format("truetype");
 }
 
 body {
@@ -113,6 +123,13 @@ a {
   padding-top: 40px;
 }
 
+.article-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .article-header {
   margin-top: 3.75em;
 }
@@ -124,4 +141,130 @@ a {
   line-height: 3rem;
   max-width: 600px;
   margin: 0 20px 20px;
+}
+
+.icons {
+  display: flex;
+  max-width: 600px;
+  padding-top: 20px;
+  border-top: 1px solid #ebebeb;
+}
+
+.icon-share {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 5px;
+  font-family: "franklin", Helvetica, Arial, sans-serif;
+}
+
+.icons-a {
+  background: #999;
+  margin-right: 16px;
+  border-radius: 50%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.icons-a i {
+  padding: 5px;
+  background: #eee;
+  border-radius: 100%;
+}
+
+.icons-b {
+  margin-right: 16px;
+}
+
+.comments-icon {
+  margin-right: 0;
+}
+
+.comment-btn {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: "franklin-n", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: transparent;
+  border: none;
+  bottom: 0.05rem;
+  padding: 0 0 4px;
+  margin-left: 2px;
+  height: 25px;
+  min-width: 24px;
+}
+
+.comment-i {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 4px;
+  min-width: 26px;
+  min-height: 14px;
+  padding: 8px;
+  position: relative;
+  width: auto;
+}
+
+.comment-i::before {
+  border-color: rgb(102, 102, 102) transparent;
+  border-style: solid;
+  bottom: -7px;
+  border-width: 6px 0 0 8px;
+  content: "";
+  display: block;
+  left: 15px;
+  position: absolute;
+  width: 0px;
+}
+
+.comment-text {
+  color: black;
+  font-style: normal;
+  line-height: 0.75rem;
+}
+
+.comment-i::after {
+  border-color: rgb(255, 255, 255) transparent;
+  border-style: solid;
+  border-width: 6px 0 0 6px;
+  bottom: -6px;
+  content: "";
+  display: block;
+  left: 16px;
+  position: absolute;
+  width: 0;
+}
+
+.img-large {
+  margin-top: 25px;
+  margin-bottom: 43px;
+}
+
+.img {
+  width: 945px;
+}
+
+.img-caption {
+  max-width: 720px;
+  color: #666;
+  font-family: "imperial", Georgia, "Times New Roman", Times, serif;
+  margin: 10px 20px 0 0;
+  line-height: 1.125rem;
+}
+
+.cap-a {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  margin-right: 4px;
+}
+
+.cap-b {
+  color: #888;
+  font-size: 0.8125rem;
 }
