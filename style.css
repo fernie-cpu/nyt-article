@@ -271,6 +271,21 @@ a {
 
 .byline-timestamp {
   width: 600px;
-  color: #121212;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.by {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: "franklin", Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+.timestamp {
+  font-family: "franklin-n", helvetica, arial, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1;
 }
