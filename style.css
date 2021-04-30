@@ -24,8 +24,23 @@
   src: url("assets/fonts/imperial-normal-500.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "imperial-i";
+  src: url("assets/fonts/imperial-italic-500.ttf");
+}
+
+@font-face {
+  font-family: "cheltenham-500";
+  src: url("assets/fonts/cheltenham-italic-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cheltenham-300";
+  src: url("assets/fonts/cheltenham-italic-300.ttf") format("truetype");
+}
+
 body {
-  font-family: "Times New Roman", Georgia, Times, sans-serif;
+  font-family: "franklin", "Times New Roman", Georgia, Times, sans-serif;
   color: #333;
 }
 
@@ -164,6 +179,7 @@ a {
   border-radius: 50%;
   width: 100%;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .icons-a i {
@@ -174,6 +190,7 @@ a {
 
 .icons-b {
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .comments-icon {
@@ -288,4 +305,79 @@ a {
   font-family: "franklin-n", helvetica, arial, sans-serif;
   font-size: 0.8125rem;
   line-height: 1;
+}
+
+.article-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sign-up-times {
+  display: flex;
+  overflow: hidden;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgb(226, 226, 226);
+  color: rgb(51, 51, 51);
+  max-width: 600px;
+  margin: 1.5625rem auto 1rem;
+}
+
+.text-box {
+  display: inline;
+  height: 100%;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.sign-up-bold {
+  display: inline;
+  font-size: 0.875rem;
+  font-family: "franklin", helvetica, arial, sans-serif;
+  line-height: 1.125rem;
+  letter-spacing: 0.03rem;
+  margin: 0;
+}
+
+.sign-up-text {
+  font-family: "imperial-i", Georgia, "Times New Roman", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.sign-up-times-btn {
+  font-size: 0.9375rem;
+  font-family: "franklin", helvetica, arial, sans-serif;
+  font-style: normal;
+  padding: 4px 12px 6px;
+  margin-top: 4px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  letter-spacing: 0.02rem;
+  transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+  text-transform: none;
+  height: 32px;
+}
+
+.sign-up-times-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.para {
+  max-width: 600px;
+  font-family: "imperial", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.9375rem;
+}
+
+.inline-message {
+  text-align: center;
 }
