@@ -20,6 +20,11 @@
 }
 
 @font-face {
+  font-family: "cheltenham-n";
+  src: url("assets/fonts/cheltenham-normal-700.ttf");
+}
+
+@font-face {
   font-family: "imperial";
   src: url("assets/fonts/imperial-normal-500.ttf") format("truetype");
 }
@@ -37,6 +42,11 @@
 @font-face {
   font-family: "cheltenham-300";
   src: url("assets/fonts/cheltenham-italic-300.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cheltenham-400";
+  src: url("assets/fonts/cheltenham-normal-400.ttf") format("truetype");
 }
 
 body {
@@ -310,6 +320,7 @@ a {
 .article-body {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -380,4 +391,63 @@ a {
 
 .inline-message {
   text-align: center;
+  line-height: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+  font-size: 15px;
+}
+
+.top-border,
+.bottom-border {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  width: 72px;
+  margin-bottom: 18px;
+}
+
+.inline-link {
+  color: rgb(50, 104, 145);
+}
+
+.bottom-border {
+  margin-top: 20px;
+}
+
+.para-link {
+  color: #326891;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.para-link:hover {
+  text-decoration: none;
+}
+
+.para-bold {
+  margin-left: -441px;
+}
+
+.theory {
+  max-width: 945px;
+  margin-top: 16px;
+}
+
+.theory-header {
+  margin-bottom: 10px;
+}
+
+.story-heading {
+  font-family: "cheltenham-n", georgia, "times new roman", times, serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 2px;
+  color: black;
+}
+
+.summary-text {
+  font-size: 0.975rem;
+  font-family: "cheltenham-400", Georgia, "Times New Roman", Times, serif;
+  color: #666;
+  line-height: 1.25rem;
 }
