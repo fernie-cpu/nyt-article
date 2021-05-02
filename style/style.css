@@ -1,52 +1,9 @@
+@import url("fonts.css");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "franklin-n";
-  src: url("assets/fonts/franklin-normal-500.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "franklin";
-  src: url("assets/fonts/franklin-normal-700.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "cheltenham";
-  src: url("assets/fonts/cheltenham-italic-700.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "cheltenham-n";
-  src: url("assets/fonts/cheltenham-normal-700.ttf");
-}
-
-@font-face {
-  font-family: "imperial";
-  src: url("assets/fonts/imperial-normal-500.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "imperial-i";
-  src: url("assets/fonts/imperial-italic-500.ttf");
-}
-
-@font-face {
-  font-family: "cheltenham-500";
-  src: url("assets/fonts/cheltenham-italic-500.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "cheltenham-300";
-  src: url("assets/fonts/cheltenham-italic-300.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "cheltenham-400";
-  src: url("assets/fonts/cheltenham-normal-400.ttf") format("truetype");
 }
 
 body {
@@ -428,8 +385,12 @@ a {
   margin-left: -441px;
 }
 
+.theory-iframe {
+  width: 945px;
+}
+
 .theory {
-  max-width: 945px;
+  position: relative;
   margin-top: 16px;
 }
 
@@ -450,4 +411,151 @@ a {
   font-family: "cheltenham-400", Georgia, "Times New Roman", Times, serif;
   color: #666;
   line-height: 1.25rem;
+}
+
+.theory-div {
+  position: absolute;
+  width: 226px;
+}
+
+.theory-text {
+  font-family: "franklin-300", arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+}
+
+.theory-bold {
+  font-family: "franklin", arial, helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.theory-div-a {
+  top: 32.8264%;
+  left: 0.0436%;
+}
+
+.theory-div-b {
+  top: 32.8264%;
+  left: 25.5619%;
+}
+
+.theory-div-c {
+  top: 32.8264%;
+  left: 51.08%;
+  width: 228px;
+}
+
+.theory-div-d {
+  top: 32.8264%;
+  left: 76.5952%;
+  width: 228px;
+}
+
+.theory-div-e {
+  top: 75.8375%;
+  left: 0.0436%;
+}
+
+.theory-div-f {
+  top: 75.8375%;
+  left: 25.5619%;
+}
+
+.theory-div-g {
+  top: 75.8375%;
+  left: 51.08%;
+  width: 228px;
+}
+
+.theory-div-h {
+  top: 75.8375%;
+  left: 76.5952%;
+  width: 228px;
+}
+
+.footer-theory {
+  max-width: 945px;
+  margin-top: 24px;
+}
+
+.footer-theory::before {
+  width: 60px;
+  content: "";
+  height: 1px;
+  background-color: #000;
+  margin: 0 0 13px;
+  display: inline-block;
+}
+
+.theory-info {
+  font-size: 0.875rem;
+  font-family: "franklin-n", helvetica, arial, sans-serif;
+  line-height: 1.125rem;
+  margin: 0 0 1em;
+}
+
+.yt-embed {
+  width: 600px;
+  margin: 29px auto 43px;
+}
+
+.yt-iframe {
+  width: 100%;
+  height: 319px;
+}
+
+.yt-caption,
+.bicep2-caption {
+  color: #666;
+  font-family: "imperial", Georgia, "Times New Roman", Times, serif;
+  margin: 10px 20px 0 0;
+  line-height: 1.125rem;
+}
+
+.yt-cap-a,
+.bicep2-cap-a {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.yt-cap-b,
+.bicep2-cap-b {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #888;
+}
+
+.bicep2 {
+  max-width: 600px;
+  margin: 1.7rem 0;
+}
+
+.bicep2-img {
+  width: 100%;
+}
+
+.bicep2-caption {
+  margin-right: 20px;
+}
+
+.bottom-of-article {
+  font-family: "franklin-n", Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 1rem auto 0.75rem;
+  color: rgb(102, 102, 102);
+}
+
+.bottom-text {
+  font-size: 0.75rem;
+}
+
+.bottom-link {
+  color: rgb(102, 102, 102);
+  text-decoration: underline;
+}
+
+.bottom-link:hover {
+  text-decoration: none;
 }
